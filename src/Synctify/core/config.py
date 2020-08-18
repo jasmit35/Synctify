@@ -12,7 +12,7 @@ from os import environ
 from re import compile
 from string import Template
 
-from .logger import logger
+from logger import logger
 
 
 __all__ = "config", "YamlConfig"
