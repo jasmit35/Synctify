@@ -12,7 +12,12 @@ my_config = config.config
 
 def get_config():
     my_config.load('Synctify.yaml')
-    return '', ''
+    return
+
+
+def build_command():
+    command = f'rsync {my_config}'
+    return command
 
 
 def process_command(command):
@@ -23,8 +28,8 @@ def main():
     my_log = logger.Logger()
     my_log.start()
     print("Hello from the Synctify app!")
-    in_dir, out_dir = get_config()
-    command = f'rsync {in_dir} {out_dir}'
+    get_config()
+    command = build_command()
     process_command(command)
     my_log.stop()
 
