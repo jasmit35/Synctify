@@ -56,4 +56,4 @@ sdist: clean
 	ls -l dist
 
 run:
-	python src/Synctify/core/Synctify.py
+	python src/Synctify/core/Synctify.py >Synctify.log 2>&1

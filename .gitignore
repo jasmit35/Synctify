@@ -32,6 +32,8 @@ dist/
 nbproject/
 *.code-workspace
 
+#  Ignore testing output
+*.log
 
 # Ignore OS metadata files.
 
