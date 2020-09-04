@@ -7,10 +7,11 @@ def run_shell_cmds(cmds):
 
     process = Popen(
         cmds,
+        shell=True,
         stdout=PIPE,
-        stderr=PIPE,
-        universal_newlines=True,
+        stderr=PIPE
     )
+#         universal_newlines=True,
 
     try:
         stdout, stderr = process.communicate()

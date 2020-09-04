@@ -33,6 +33,7 @@ nbproject/
 *.code-workspace
 
 #  Ignore testing output
+*.err
 *.log
 
 # Ignore OS metadata files.
