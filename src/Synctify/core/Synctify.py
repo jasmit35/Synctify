@@ -27,7 +27,7 @@ def std_end(rc=0, sysout=None, syserr=None):
 
 def get_config():
     my_config.load('Synctify.yaml')
-    return '/Users/Jeff', '/Volumes/backup/jobs'
+    return '/Users/Jeff', '/System/Volumes/Data/Volumes/backup/jobs'
 
 
 def check_destination(destination):
