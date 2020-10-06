@@ -8,6 +8,7 @@ import subprocess
 import sys
 
 from run_shell_cmds import run_shell_cmds
+from gmail import Gmailer
 
 my_config = config.config
 my_log = None
@@ -23,6 +24,9 @@ def std_begin():
 def std_end(rc=0, sysout=None, syserr=None):
     global my_log
     my_log.stop()
+
+    mailer = Gmailer("password")
+    mailer.send("js8335@swbell.net", my_log)
 
 
 def get_config():
