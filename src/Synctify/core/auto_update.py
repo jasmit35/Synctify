@@ -113,6 +113,7 @@ def main():
     source_files = [
         "Synctify.py",
         "config.py",
+        "gmailer.py",
         "logger.py",
         "run_shell_cmds.py"
     ]

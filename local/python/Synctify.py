@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 from run_shell_cmds import run_shell_cmds
-from gmailer import Gmailer
+from gmail import Gmailer
 
 my_config = config.config
 my_log = None

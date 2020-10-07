@@ -40,3 +40,7 @@ nbproject/
 
 .DS_Store
 Thumbs.db
+
+#  Ignore devlopment testing
+local/python/*
+
