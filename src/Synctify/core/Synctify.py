@@ -3,49 +3,90 @@ Synctify - Keep two directories in sync with the rsync utility.
 '''
 
 import config
-import logger
+import logging
 import subprocess
 import sys
 
 from run_shell_cmds import run_shell_cmds
 from gmailer import Gmailer
 
-my_config = config.config
-my_log = None
 
 
 def std_begin():
-    global my_log
-    my_log = logger.Logger()
-    my_log.start()
-    my_log.info("Synctify is starting...")
+    logging.info("Synctify is starting...")
 
 
-def std_end(rc=0, sysout=None, syserr=None):
-    global my_log
-    my_log.stop()
+def std_end(rc=0, sysout=None, syserr=None, gword=None):
 
-    mailer = Gmailer("password")
-    mailer.send("js8335@swbell.net", my_log)
+    mailer = Gmailer(gword)
+    logging.info("Sending log file...")
+    logging.shutdown()
+
+    message = "Subject: Test message\n"
+
+    message += "Start of log file...\n"
+
+    sys.stdout.flush()
+
+    with open("../log/Synctify.log", 'r') as f:
+        message += f.read()
+
+#     message += "Start of error file...\n"
+#     with open("../log/Synctify.err", 'r') as f:
+#         message += f.read()
+
+    mailer.send("js8335@swbell.net", message)
+
+    sys.exit(rc)
+
+def std_end2(rc=0):
+
+    cfg = config.Config('/Users/Jeff/.gmail.yaml')
+    gword = cfg['Gmailer.password']
+    mailer = Gmailer(gword)
+
+    logging.info("Sending log file...")
+
+    message = "Subject: Test message\n"
+
+    message += "Start of log file...\n"
+
+    sys.stdout.flush()
+    sys.stderr.flush()
+
+    with open("../log/Synctify.log", 'r') as f:
+        message += f.read()
+
+    mailer.send("js8335@swbell.net", message)
+
+    sys.exit(rc)
+
 
 
 def get_config():
-    my_config.load('Synctify.yaml')
-    return '/Users/Jeff', '/System/Volumes/Data/Volumes/backup/jobs'
+    cfg = config.Config('/Users/Jeff/.gmail.yaml')
+    gword = cfg['Gmailer.password']
+
+    my_config = config.Config('Synctify.yaml')
+    return '/Users/Jeff/devl', '/System/Volumes/Data/Volumes/backup/jobs', gword
 
 
 def check_destination(destination):
-    rc = 0
-    try:
-        output = subprocess.check_output(
-            f'test -d {destination}',
-            shell=True,
-            stderr=subprocess.STDOUT
-           )
-    except subprocess.CalledProcessError:
-        rc = 1
-        output = f'The destionation {destination} is not an existing directory'
-    return rc, output
+#     rc = 0
+#     try:
+#         output = subprocess.check_output(
+#             f'test -d {destination}',
+#             shell=True,
+#             stderr=subprocess.STDOUT
+#            )
+#     except subprocess.CalledProcessError:
+#         rc = 1
+#         output = f'The destionation {destination} is not an existing directory'
+#    std_end(rc, output, stderr, gword) 
+    #  Run the command.
+    cmd = f'test -d {destination}'
+#     rc, stdout, stderr = run_shell_cmds(cmd)
+    return run_shell_cmds(cmd)
 
 
 def build_command_string(source, destination):
@@ -59,13 +100,16 @@ def build_command_string(source, destination):
 
 
 def main():
+    logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
+    logging.info("begin main()")
+
     std_begin()
-    source, destination = get_config()
+    source, destination, gword = get_config()
+
     #  Test that the destination for the output is available.
-    rc, output = check_destination(destination)
+    rc, stdout, stderr = check_destination(destination)
     if rc:
-        print(output)
-        return
+        std_end2(rc)
 
     #  Build the command string.
     cmd = build_command_string(source, destination)
@@ -76,7 +120,7 @@ def main():
     if not rc:
         sys.stderr.buffer.write(stderr)
 
-    std_end()
+    std_end(rc, stdout, stderr, gword)
 
 
 if __name__ == "__main__":
