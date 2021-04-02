@@ -2,5 +2,8 @@
 ##
 ##   python -m pip install --requirement=requirements.txt
 ##
-python-dotenv>=0.12
-PyYAML>=3.11
+config==0.5.0.post0
+gmail==0.6.3
+logger==1.4
+python-dotenv==0.14.0
+PyYAML==5.3.1

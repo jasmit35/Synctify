@@ -4,15 +4,15 @@ Synctify - Keep two directories in sync with the rsync utility.
 
 import config
 import logging
-import subprocess
+# import subprocess 
 import sys
 
 from run_shell_cmds import run_shell_cmds
 from gmailer import Gmailer
 
 
-
-def std_begin():
+def my_begin():
+    logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
     logging.info("Synctify is starting...")
 
 
@@ -39,6 +39,7 @@ def std_end(rc=0, sysout=None, syserr=None, gword=None):
 
     sys.exit(rc)
 
+
 def std_end2(rc=0):
 
     cfg = config.Config('/Users/Jeff/.gmail.yaml')
@@ -62,16 +63,16 @@ def std_end2(rc=0):
     sys.exit(rc)
 
 
-
 def get_config():
     cfg = config.Config('/Users/Jeff/.gmail.yaml')
     gword = cfg['Gmailer.password']
 
     my_config = config.Config('Synctify.yaml')
-    return '/Users/Jeff/devl', '/System/Volumes/Data/Volumes/backup/jobs', gword
+    return '/Users/Jeff/devl', str("/System/Volumes/Data/Volumes/Backup\ Share/Jobs/Synctify/users/jeff"), gword
 
 
 def check_destination(destination):
+    logging.info(f'begin check_destination({destination})')
 #     rc = 0
 #     try:
 #         output = subprocess.check_output(
@@ -85,12 +86,13 @@ def check_destination(destination):
 #    std_end(rc, output, stderr, gword) 
     #  Run the command.
     cmd = f'test -d {destination}'
-#     rc, stdout, stderr = run_shell_cmds(cmd)
-    return run_shell_cmds(cmd)
+    rc, stdout, stderr = run_shell_cmds(cmd)
+    logging.info(f'end  check_destination - returns {rc}, {stdout}, {stderr}')
+    return rc, stdout, stderr
 
 
 def build_command_string(source, destination):
-    command = f'''rsync -av --delete \
+    command = f'''rsync -at --delete \
         --exclude=jeff/.Trash \
         --exclude="Library" \
         {source} \
@@ -100,10 +102,9 @@ def build_command_string(source, destination):
 
 
 def main():
-    logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
+    my_begin()
     logging.info("begin main()")
 
-    std_begin()
     source, destination, gword = get_config()
 
     #  Test that the destination for the output is available.

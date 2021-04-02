@@ -1,0 +1,15 @@
+####################################################################################################
+#  My environment variables
+#
+ENVIRONMENT=devl  # [devl, test, prod]
+#
+####################################################################################################
+#  Synctify
+#
+RUNMYPY=/Users/Jeff/$ENVIRONMENT/Synctify/local/bin/runmypy.sh
+SYNC_LOCAL=/Users/Jeff/$ENVIRONMENT/Synctify/local
+#
+30 09  *  * * $RUNMYPY $SYNC_LOCAL/python/Synctify.py >$SYNC_LOCAL/log/Synctify.log 2>&1
+55 11 01 04 * $RUNMYPY $SYNC_LOCAL/python/Synctify.py >$SYNC_LOCAL/log/Synctify.log 2>&1
+#
+####################################################################################################
