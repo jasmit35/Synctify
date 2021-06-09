@@ -2,126 +2,124 @@
 Synctify - Keep two directories in sync with the rsync utility.
 '''
 
+import argparse
 import config
-import logging
-# import subprocess 
+import logging as log
+from pathlib import Path
 import sys
 
 from run_shell_cmds import run_shell_cmds
 from gmailer import Gmailer
 
-
-def my_begin():
-    logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
-    logging.info("Synctify is starting...")
+env_specific_params = None
 
 
-def std_end(rc=0, sysout=None, syserr=None, gword=None):
+def my_startup():
+    global env_specific_params
+
+    comandline_arguments = get_cmdline_args()
+    cfgfile = comandline_arguments.cfgfile
+    environment = comandline_arguments.environment
+
+    cfgfile_params = config.Config(f'../etc/{cfgfile}')
+    env_specific_params = cfgfile_params[f'{environment}']
+
+    log_level = env_specific_params['log_level']
+
+    if log_level == 'DEBUG':
+        log_level = log.DEBUG
+    else:
+        if log_level == 'INFO':
+            log_level = log.INFO
+
+    log.basicConfig(level=log_level,
+                    format='%(asctime)s %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
+                    handlers=[log.FileHandler(filename='../log/synctify.log')]
+                    )
+
+
+def get_cmdline_args():
+    parser = argparse.ArgumentParser(description="Synctify")
+    parser.add_argument(
+        "-e", "--environment",
+        required=True,
+        choices=["devl", "test", "prod"],
+        help="Environment - devl, test or prod"
+    )
+    parser.add_argument(
+        "-c", "--cfgfile",
+        required=False,
+        default="synctify.cfg",
+        help="Name of the configuration file to use"
+    )
+    args = parser.parse_args()
+    return args
+
+
+def my_shutdown(rc=0, sysout=None, syserr=None):
+
+    gmail_cfg_file = env_specific_params['jeff_home'] + "/.gmail.yaml"
+    gmail_params = config.Config(gmail_cfg_file)
+    gword = gmail_params['Gmailer.password']
 
     mailer = Gmailer(gword)
-    logging.info("Sending log file...")
-    logging.shutdown()
+    log.info("Sending log file...")
+    log.shutdown()
 
-    message = "Subject: Test message\n"
+    message = "Subject: Synctify logs\n"
 
-    message += "Start of log file...\n"
-
+    message += "\nStart of .out file...\n"
     sys.stdout.flush()
-
-    with open("../log/Synctify.log", 'r') as f:
+    with open("../log/synctify.out", 'r') as f:
         message += f.read()
 
-#     message += "Start of error file...\n"
-#     with open("../log/Synctify.err", 'r') as f:
-#         message += f.read()
+    message += "\nStart of .err file...\n"
+    with open("../log/synctify.err", 'r') as f:
+        message += f.read()
+
+    if rc not in [0, 23]:
+        message += "\nStart of .log file...\n"
+        with open("../log/synctify.log", 'r') as f:
+            message += f.read()
+
+    message += "\nend of message\n"
 
     mailer.send("js8335@swbell.net", message)
 
     sys.exit(rc)
-
-
-def std_end2(rc=0):
-
-    cfg = config.Config('/Users/Jeff/.gmail.yaml')
-    gword = cfg['Gmailer.password']
-    mailer = Gmailer(gword)
-
-    logging.info("Sending log file...")
-
-    message = "Subject: Test message\n"
-
-    message += "Start of log file...\n"
-
-    sys.stdout.flush()
-    sys.stderr.flush()
-
-    with open("../log/Synctify.log", 'r') as f:
-        message += f.read()
-
-    mailer.send("js8335@swbell.net", message)
-
-    sys.exit(rc)
-
-
-def get_config():
-    cfg = config.Config('/Users/Jeff/.gmail.yaml')
-    gword = cfg['Gmailer.password']
-
-    my_config = config.Config('Synctify.yaml')
-    return '/Users/Jeff/devl', str("/System/Volumes/Data/Volumes/Backup\ Share/Jobs/Synctify/users/jeff"), gword
-
-
-def check_destination(destination):
-    logging.info(f'begin check_destination({destination})')
-#     rc = 0
-#     try:
-#         output = subprocess.check_output(
-#             f'test -d {destination}',
-#             shell=True,
-#             stderr=subprocess.STDOUT
-#            )
-#     except subprocess.CalledProcessError:
-#         rc = 1
-#         output = f'The destionation {destination} is not an existing directory'
-#    std_end(rc, output, stderr, gword) 
-    #  Run the command.
-    cmd = f'test -d {destination}'
-    rc, stdout, stderr = run_shell_cmds(cmd)
-    logging.info(f'end  check_destination - returns {rc}, {stdout}, {stderr}')
-    return rc, stdout, stderr
 
 
 def build_command_string(source, destination):
-    command = f'''rsync -at --delete \
+    command = f'''rsync -av --no-perms --delete \
         --exclude=jeff/.Trash \
         --exclude="Library" \
-        {source} \
-        {destination}
+        "{source}" \
+        "{destination}"
     '''
     return command
 
 
 def main():
-    my_begin()
-    logging.info("begin main()")
+    my_startup()
+    log.info("begin main()")
 
-    source, destination, gword = get_config()
+    source = env_specific_params['source_dir']
+    destination = env_specific_params['destination_dir']
 
-    #  Test that the destination for the output is available.
-    rc, stdout, stderr = check_destination(destination)
-    if rc:
-        std_end2(rc)
+    test_path = Path(destination)
+    if Path.exists(test_path) is False:
+        print(f"The destination path \"{destination}\" does not exist. Terminating.")
+        my_shutdown(128)
 
-    #  Build the command string.
     cmd = build_command_string(source, destination)
 
-    #  Run the command.
     rc, stdout, stderr = run_shell_cmds(cmd)
     sys.stdout.buffer.write(stdout)
     if not rc:
         sys.stderr.buffer.write(stderr)
 
-    std_end(rc, stdout, stderr, gword)
+    my_shutdown(rc, stdout, stderr)
 
 
 if __name__ == "__main__":

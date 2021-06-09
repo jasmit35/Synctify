@@ -12,8 +12,7 @@ export PATH=$HOME/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-python_dir="$HOME/dbsec/local/python"
-export PYTHONPATH=$PYTHONPATH:${python_dir}
+export PYTHONPATH=${the_dir}:$PYTHONPATH
 
 cd ${the_dir}
 
