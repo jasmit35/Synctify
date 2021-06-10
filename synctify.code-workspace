@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.pythonPath": "/Users/jeff/.pyenv/versions/3.8.2/envs/Synctify/bin/python"
+	}
+}

@@ -93,7 +93,6 @@ def my_shutdown(rc=0, sysout=None, syserr=None):
 def build_command_string(source, destination):
     command = f'''rsync -av --no-perms --delete \
         --exclude=jeff/.Trash \
-        --exclude="Library" \
         "{source}" \
         "{destination}"
     '''

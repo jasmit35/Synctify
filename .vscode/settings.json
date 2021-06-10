@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./local/python"
+    ],
+    "python.pythonPath": "/Users/jeff/.pyenv/versions/3.8.2/envs/TRO/bin/python"
+}

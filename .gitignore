@@ -8,11 +8,6 @@ dist/
 *.pyo
 
 
-# Ignore pyenv files.
-
-.python-version
-
-
 # Ignore virtualenv environments.
 
 .venv*/
@@ -28,19 +23,15 @@ dist/
 .idea/
 .project/
 .pydevproject/
-.vscode/
 nbproject/
-*.code-workspace
 
 #  Ignore testing output
 *.err
-*.log
+**/*.log
+*.out
 
 # Ignore OS metadata files.
 
 .DS_Store
 Thumbs.db
-
-#  Ignore devlopment testing
-local/python/*
 
