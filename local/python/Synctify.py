@@ -6,6 +6,7 @@ import argparse
 import config
 import logging as log
 from pathlib import Path
+from re import sub
 import sys
 
 from run_shell_cmds import run_shell_cmds
@@ -91,11 +92,18 @@ def my_shutdown(rc=0, sysout=None, syserr=None):
 
 
 def build_command_string(source, destination):
-    command = f'''rsync -av --no-perms --delete \
-        --exclude=jeff/.Trash \
-        "{source}" \
-        "{destination}"
-    '''
+    log.info(f"begin build_command_string({source}, {destination})")
+
+    command = 'rsync -av --no-perms --delete'
+
+    excludes = env_specific_params['excludes']
+    for excl in excludes:
+        command += f" {excl} "
+
+    command += f"'{source}' '{destination}'"
+    command = sub(" +", " ", command)
+
+    log.info(f"end   build_command_sring - returns {command}")
     return command
 
 
