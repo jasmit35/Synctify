@@ -1,0 +1,38 @@
+################################################################################
+#  My environment variables
+#
+# ENVIRONMENT=devl  # [devl, test, prod]
+RUNPY_DEVL=/Users/Jeff/devl/local/bin/runmypy.sh
+RUNPY_TEST=/Users/Jeff/test/local/bin/runmypy.sh
+#
+################################################################################
+#
+#  Synctify
+SYNC_DEVL=/Users/jeff/devl/synctify
+#...............................................................................
+#
+################################################################################
+#
+#  TRO Devl
+#...............................................................................
+#  Load 
+TROLOAD_DEVL=/Users/jeff/devl/troload
+#...............................................................................
+#  Reports 
+TRORPTS_DEVL=/Users/jeff/devl/trorpts
+#
+################################################################################
+#
+#  TRO Test
+#...............................................................................
+#
+#  Load 
+#...............................................................................
+#
+#  Reports 
+################################################################################
+#
+34 10 27 12 * $RUNPY_DEVL $SYNC_DEVL/src/synctify.py -e devl -c synctify.cfg >$SYNC_DEVL/local/log/synctify.out 2>$SYNC_DEVL/local/log/synctify.err
+53 10 27 12 * $RUNPY_DEVL $SYNC_DEVL/src/synctify.py -e devl >$SYNC_DEVL/local/log/synctify.out 2>$SYNC_DEVL/local/log/synctify.err
+33 18 26 12 * $RUNPY_DEVL $TROLOAD_DEVL/src/troload.py -e devl >$TROLOAD_DEVL/local/log/troload.out 2>$TROLOAD_DEVL/local/log/troload.err
+30 17 26 12 * $RUNPY_DEVL $TRORPTS_DEVL/src/trorpts.py -e devl -r cats -f '2021-01-01' -l '2021-01-31' >$TRORPTS_DEVL/local/log/trorpts.out 2>$TRORPTS_DEVL/local/log/trorpts.err

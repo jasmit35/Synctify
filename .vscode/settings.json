@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "/Users/jeff/.pyenv/versions/synctify/lib/python3.8/site-packages",
+        "/Users/jeff/devl/local/python",
+    ],
+    "python.pythonPath": "/Users/jeff/.pyenv/versions/synctify/bin/python"
+}
