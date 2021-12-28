@@ -1,3 +1,5 @@
 #
-local/log/
+**/*.log
+**/*.rpt
+
 src/__pycache__/

@@ -1,0 +1,518 @@
+building file list ... done
+deleting .pgenv/pgsql-13.5/data/pg_subtrans/0000
+deleting .pgenv/pgsql-13.5/data/pg_wal/000000010000000000000001
+deleting devl/synctify/local/log/synctify_12_27_21_15_35.rpt
+deleting devl/troload/local/stage/Transactions_2021_01.xlsx
+./
+.viminfo
+.dropbox/instance1/
+.dropbox/instance1/config.dbx
+.dropbox/instance1/sync_history.db
+.dropbox/instance1/sync/nucleus.sqlite3-wal
+.dropbox/logs/1/
+.dropbox/metrics/store.bin
+.pgenv/pgsql-13.5/data/base/16384/
+.pgenv/pgsql-13.5/data/base/16384/1259
+.pgenv/pgsql-13.5/data/base/16384/16438
+.pgenv/pgsql-13.5/data/base/16384/16440
+.pgenv/pgsql-13.5/data/base/16384/16440_fsm
+.pgenv/pgsql-13.5/data/base/16384/16447
+.pgenv/pgsql-13.5/data/base/16384/16451
+.pgenv/pgsql-13.5/data/base/16384/16451_fsm
+.pgenv/pgsql-13.5/data/base/16384/16451_vm
+.pgenv/pgsql-13.5/data/base/16384/16458
+.pgenv/pgsql-13.5/data/base/16384/2619
+.pgenv/pgsql-13.5/data/base/16384/2619_fsm
+.pgenv/pgsql-13.5/data/base/16384/2696
+.pgenv/pgsql-13.5/data/global/pg_control
+.pgenv/pgsql-13.5/data/pg_logical/
+.pgenv/pgsql-13.5/data/pg_logical/replorigin_checkpoint
+.pgenv/pgsql-13.5/data/pg_stat_tmp/
+.pgenv/pgsql-13.5/data/pg_stat_tmp/db_0.stat
+.pgenv/pgsql-13.5/data/pg_stat_tmp/db_12924.stat
+.pgenv/pgsql-13.5/data/pg_stat_tmp/db_16384.stat
+.pgenv/pgsql-13.5/data/pg_stat_tmp/global.stat
+.pgenv/pgsql-13.5/data/pg_subtrans/
+.pgenv/pgsql-13.5/data/pg_subtrans/0002
+.pgenv/pgsql-13.5/data/pg_wal/
+.pgenv/pgsql-13.5/data/pg_wal/000000010000000000000015
+.pgenv/pgsql-13.5/data/pg_wal/000000010000000000000016
+.pgenv/pgsql-13.5/data/pg_wal/000000010000000000000017
+.pgenv/pgsql-13.5/data/pg_wal/000000010000000000000018
+.pgenv/pgsql-13.5/data/pg_wal/000000010000000000000019
+.pgenv/pgsql-13.5/data/pg_wal/00000001000000000000001A
+.pgenv/pgsql-13.5/data/pg_xact/0000
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/brindesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/clogdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/committsdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/dbasedesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/genericdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/gindesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/gistdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/hashdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/heapdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/logicalmsgdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/mxactdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/nbtdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/relmapdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/replorigindesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/seqdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/smgrdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/spgdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/standbydesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/tblspcdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/xactdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/rmgrdesc/xlogdesc.c
+.pgenv/src/postgresql-13.5/src/backend/access/transam/xlogreader.c
+.pgenv/src/postgresql-13.5/src/backend/port/sysv_sema.c
+.pgenv/src/postgresql-13.5/src/backend/port/sysv_shmem.c
+.pgenv/src/postgresql-13.5/src/backend/port/tas/dummy.s
+.pgenv/src/postgresql-13.5/src/include/port/darwin.h
+.pgenv/src/postgresql-13.5/src/interfaces/ecpg/ecpglib/typename.c
+.pgenv/src/postgresql-13.5/src/makefiles/Makefile.darwin
+.pgenv/src/postgresql-13.5/src/timezone/localtime.c
+.pyenv/versions/3.8.12/bin/
+.pyenv/versions/3.8.12/bin/python3.8
+.pyenv/versions/3.8.12/bin/python3.8-config
+.pyenv/versions/3.8.12/lib/pkgconfig/
+.pyenv/versions/3.9.9/bin/
+.pyenv/versions/3.9.9/bin/python3.9
+.pyenv/versions/3.9.9/bin/python3.9-config
+.pyenv/versions/3.9.9/lib/pkgconfig/
+Movies/
+Movies/TV/
+Movies/TV/Media.localized/
+Movies/TV/Media.localized/.localized/
+Movies/TV/TV Library.tvlibrary/
+Movies/iMovie Theater.theater/
+Music/
+Pictures/
+Pictures/Photos Library.photoslibrary/
+Pictures/Photos Library.photoslibrary/database/
+Pictures/Photos Library.photoslibrary/database/Photos.sqlite
+Pictures/Photos Library.photoslibrary/database/Photos.sqlite-wal
+Pictures/Photos Library.photoslibrary/database/.Photos_SUPPORT/
+Pictures/Photos Library.photoslibrary/database/search/
+Pictures/Photos Library.photoslibrary/external/
+Pictures/Photos Library.photoslibrary/internal/
+Pictures/Photos Library.photoslibrary/internal/crowdsourcedthemes/
+Pictures/Photos Library.photoslibrary/internal/crowdsourcedthemes/com.apple.photos.geoanalytics/
+Pictures/Photos Library.photoslibrary/internal/crowdsourcedthemes/com.apple.photos.geoanalytics/local/
+Pictures/Photos Library.photoslibrary/originals/
+Pictures/Photos Library.photoslibrary/originals/0/
+Pictures/Photos Library.photoslibrary/originals/1/
+Pictures/Photos Library.photoslibrary/originals/2/
+Pictures/Photos Library.photoslibrary/originals/3/
+Pictures/Photos Library.photoslibrary/originals/4/
+Pictures/Photos Library.photoslibrary/originals/5/
+Pictures/Photos Library.photoslibrary/originals/6/
+Pictures/Photos Library.photoslibrary/originals/7/
+Pictures/Photos Library.photoslibrary/originals/8/
+Pictures/Photos Library.photoslibrary/originals/9/
+Pictures/Photos Library.photoslibrary/originals/A/
+Pictures/Photos Library.photoslibrary/originals/B/
+Pictures/Photos Library.photoslibrary/originals/C/
+Pictures/Photos Library.photoslibrary/originals/D/
+Pictures/Photos Library.photoslibrary/originals/E/
+Pictures/Photos Library.photoslibrary/originals/F/
+Pictures/Photos Library.photoslibrary/private/
+Pictures/Photos Library.photoslibrary/private/com.apple.accountsd/
+Pictures/Photos Library.photoslibrary/private/com.apple.mediaanalysisd/
+Pictures/Photos Library.photoslibrary/private/com.apple.mediaanalysisd/MediaAnalysis/
+Pictures/Photos Library.photoslibrary/private/com.apple.mediaanalysisd/caches/
+Pictures/Photos Library.photoslibrary/private/com.apple.mediaanalysisd/caches/vision/
+Pictures/Photos Library.photoslibrary/private/com.apple.photoanalysisd/
+Pictures/Photos Library.photoslibrary/private/com.apple.photoanalysisd/caches/
+Pictures/Photos Library.photoslibrary/private/com.apple.photoanalysisd/caches/graph/
+Pictures/Photos Library.photoslibrary/private/com.apple.photoanalysisd/caches/graph/PhotosGraph/
+Pictures/Photos Library.photoslibrary/private/com.apple.photolibraryd/
+Pictures/Photos Library.photoslibrary/private/com.apple.photolibraryd/caches/
+Pictures/Photos Library.photoslibrary/private/com.apple.photolibraryd/caches/clientservertransaction/
+Pictures/Photos Library.photoslibrary/resources/
+Pictures/Photos Library.photoslibrary/resources/caches/
+Pictures/Photos Library.photoslibrary/resources/caches/analytics/
+Pictures/Photos Library.photoslibrary/resources/cpl/
+Pictures/Photos Library.photoslibrary/resources/cpl/cloudsync.noindex/
+Pictures/Photos Library.photoslibrary/resources/cpl/cloudsync.noindex/mobileCPL.plist
+Pictures/Photos Library.photoslibrary/resources/cpl/cloudsync.noindex/storage/
+Pictures/Photos Library.photoslibrary/resources/cpl/cloudsync.noindex/storage/store.cloudphotodb-wal
+Pictures/Photos Library.photoslibrary/resources/cpl/cloudsync.noindex/storage/filecache/
+Pictures/Photos Library.photoslibrary/resources/derivatives/
+Pictures/Photos Library.photoslibrary/resources/derivatives/0/
+Pictures/Photos Library.photoslibrary/resources/derivatives/1/
+Pictures/Photos Library.photoslibrary/resources/derivatives/2/
+Pictures/Photos Library.photoslibrary/resources/derivatives/3/
+Pictures/Photos Library.photoslibrary/resources/derivatives/4/
+Pictures/Photos Library.photoslibrary/resources/derivatives/5/
+Pictures/Photos Library.photoslibrary/resources/derivatives/6/
+Pictures/Photos Library.photoslibrary/resources/derivatives/7/
+Pictures/Photos Library.photoslibrary/resources/derivatives/8/
+Pictures/Photos Library.photoslibrary/resources/derivatives/9/
+Pictures/Photos Library.photoslibrary/resources/derivatives/A/
+Pictures/Photos Library.photoslibrary/resources/derivatives/B/
+Pictures/Photos Library.photoslibrary/resources/derivatives/C/
+Pictures/Photos Library.photoslibrary/resources/derivatives/D/
+Pictures/Photos Library.photoslibrary/resources/derivatives/E/
+Pictures/Photos Library.photoslibrary/resources/derivatives/F/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/0/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/1/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/2/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/3/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/4/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/5/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/6/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/7/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/8/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/9/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/A/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/B/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/C/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/D/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/E/
+Pictures/Photos Library.photoslibrary/resources/derivatives/masters/F/
+Pictures/Photos Library.photoslibrary/resources/derivatives/thumbs/
+Pictures/Photos Library.photoslibrary/resources/journals/
+Pictures/Photos Library.photoslibrary/resources/journals/HistoryToken.plist
+Pictures/Photos Library.photoslibrary/resources/renders/
+Pictures/Photos Library.photoslibrary/resources/renders/0/
+Pictures/Photos Library.photoslibrary/resources/renders/1/
+Pictures/Photos Library.photoslibrary/resources/renders/2/
+Pictures/Photos Library.photoslibrary/resources/renders/3/
+Pictures/Photos Library.photoslibrary/resources/renders/4/
+Pictures/Photos Library.photoslibrary/resources/renders/5/
+Pictures/Photos Library.photoslibrary/resources/renders/6/
+Pictures/Photos Library.photoslibrary/resources/renders/7/
+Pictures/Photos Library.photoslibrary/resources/renders/8/
+Pictures/Photos Library.photoslibrary/resources/renders/9/
+Pictures/Photos Library.photoslibrary/resources/renders/A/
+Pictures/Photos Library.photoslibrary/resources/renders/B/
+Pictures/Photos Library.photoslibrary/resources/renders/C/
+Pictures/Photos Library.photoslibrary/resources/renders/D/
+Pictures/Photos Library.photoslibrary/resources/renders/E/
+Pictures/Photos Library.photoslibrary/resources/renders/F/
+Pictures/Photos Library.photoslibrary/scopes/
+Pictures/Photos Library.photoslibrary/scopes/cloudsharing/
+Pictures/Photos Library.photoslibrary/scopes/cloudsharing/caches/
+Pictures/Photos Library.photoslibrary/scopes/cloudsharing/data/
+Pictures/Photos Library.photoslibrary/scopes/cloudsharing/data/123912168/
+Pictures/Photos Library.photoslibrary/scopes/cloudsharing/data/123912168/857b9fbb-d7ae-4818-b08d-0b0b8e7e80da/
+Pictures/Photos Library.photoslibrary/scopes/cloudsharing/data/123912168/B3634B10-A03F-478E-9E33-631CE90A8DF0/
+Pictures/Photos Library.photoslibrary/scopes/syndication/
+Pictures/Photos Library.photoslibrary/scopes/syndication/resources/
+Pictures/Photos Library.photoslibrary/scopes/syndication/resources/derivatives/
+Pictures/Photos Library.photoslibrary/scopes/syndication/resources/derivatives/masters/
+Pictures/Photos Library.photoslibrary/scopes/syndication/resources/derivatives/masters/6/
+Pictures/Photos Library.photoslibrary/scopes/syndication/resources/derivatives/masters/C/
+Public/
+Public/Drop Box/
+devl/synctify/local/etc/
+devl/synctify/local/log/
+devl/synctify/local/log/synctify.err
+devl/synctify/local/log/synctify.log
+devl/synctify/local/log/synctify.out
+devl/synctify/local/log/synctify_12_28_21_01_00.rpt
+devl/synctify/src/
+devl/troload/.vscode/launch.json
+devl/troload/local/log/
+devl/troload/local/log/troload.err
+devl/troload/local/log/troload.log
+devl/troload/local/log/troload.out
+devl/troload/local/log/troload_12_27_21_20_34.rpt
+devl/troload/local/stage/
+devl/troload/local/stage/Transactions_2021_01.xlsx.bkp
+devl/troload/src/
+devl/troload/src/transwkbk.py
+devl/troload/src/troload.py
+iCloud Drive (Archive)/
+iCloud Drive (Archive)/Desktop/
+iCloud Drive (Archive)/Documents by Readdle/
+iCloud Drive (Archive)/Documents/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/Dutch.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/English.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/French.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/German.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/Italian.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/Japanese.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/Spanish.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/ar.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/ca.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/cs.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/da.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/el.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/fi.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/he.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/hr.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/hu.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/ko.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/no.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/pl.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/pt.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/pt_PT.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/ro.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/ru.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/sk.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/sv.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/th.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/tr.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/uk.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/zh_CN.lproj/
+iCloud Drive (Archive)/Documents/About Stacks.lpdf/Contents/Resources/zh_TW.lproj/
+iCloud Drive (Archive)/Documents/Developer/
+iCloud Drive (Archive)/Documents/Developer/MyPlayground.playground/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Aachen/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Ad Lib/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Air Flow/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Aldine/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Alternate/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/American/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Americana/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Arrus/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/A/Aundee/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Baker Signet/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Balloon/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Bank Gothic/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Baskerville/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Belwe/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Bernhard/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Big Chump/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Blackletter/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Bookman/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Broadway/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Bruce/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/B/Brush/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Calligraph/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Candida/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Caslon/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Century/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Cheddar Salad/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Cheltenham/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Cloister/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Compacta/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Copperplate/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Courier/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/C/Crazy Girlz/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/D/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/D/Decorate/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/D/Dellarobbia/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/D/Dom/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/D/Dragline/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/D/Dutch/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/Egyptian/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/Embassy/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/Empire/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/English/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/Engraver/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/Exotic Island/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/E/Exotic/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/Flemish/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/Folio/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/Formal/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/Fraktur/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/Freeform/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/Freehand/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/French/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/F/Futura/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Galeforce/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Garamond/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Gargantua/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Gasoline Serif/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Geometric/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Gothic/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Goudy/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/G/Grilled Cheese/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/Hawaiian Aloha/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/Heather/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/Hobo/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/Holiday Springs/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/Hot Mustard/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/Humanist/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/H/Huxley/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/I/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/I/Iguana Lover/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/I/Imperial/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/I/Impress/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/I/Industrial/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/I/Informal/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/I/Iowan/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/J/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/J/Jade Monkey/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/J/Jukay/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/K/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/K/Kaufmann/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/K/Kis/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/K/Kuenstle/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/LA Headlights/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/Lapidary/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/Latin/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/Letter/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/Liberty/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/Life/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/Lucia/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/L/Lydian/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Malihini Tahitian/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Marquisette/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Matt/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Mister Earl/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Modern/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Monospace/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Monterey/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Morning Limerick/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/M/Murray Hill/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/N/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/N/Neurotic Minds/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/N/News/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/N/Nuptial/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/OCR/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/Ocalla Hand/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/Old Dread/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/Onyx/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/Operator Nine/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/Oranda/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/Orator/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/O/Oz/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Parisian/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Park Avenue/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Peppered/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Pica/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Piranesi/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Platinum Beat/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Playbill/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/P/Prestige/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/R/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/R/Register Sans/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/R/Revival/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/R/Ribbon/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/R/Roast Beef/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/R/Romana/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/R/Roundhand/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Salsa Mangos/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Sandscript/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Script/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Shotgun/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Smarty Pants/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Snow Cap/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Sonic/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Sprocket/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Square/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Staccato/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Stencil/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Stone Age/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Stuyvesant/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Super Delicious/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Supremaganda/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Surfer Shop/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/S/Swiss/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/T/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/T/Tango/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/T/Transit/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/T/Tropicali Script/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/T/Typo/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/U/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/U/Undercurrent/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/U/University/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/V/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/V/Vag Rounded/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/V/Venetian/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/W/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/W/Wacky Action/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/W/Wedding/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/W/Wild Ketchup/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/Y/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/Y/Youngsook/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/Z/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/Z/Zapf/
+iCloud Drive (Archive)/Documents/Font Explosion 500 Volume II/Fonts/Z/Zolano Sans/
+iCloud Drive (Archive)/Documents/OSx/
+iCloud Drive (Archive)/Documents/Parallels/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Ganymede.app/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Ganymede.app/Contents/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Ganymede.app/Contents/MacOS/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Ganymede.app/Contents/Resources/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Ganymede.app/Contents/Resources/English.lproj/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Ganymede.app/Contents/Resources/English.lproj/main.nib/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Windows.app/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Windows.app/Contents/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Windows.app/Contents/MacOS/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Windows.app/Contents/Resources/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Windows.app/Contents/Resources/English.lproj/
+iCloud Drive (Archive)/Documents/Parallels/Ganymede.pvm/Windows.app/Contents/Resources/English.lproj/main.nib/
+iCloud Drive (Archive)/Documents/Project.band/
+iCloud Drive (Archive)/Documents/Project.band/Alternatives/
+iCloud Drive (Archive)/Documents/Project.band/Alternatives/000/
+iCloud Drive (Archive)/Documents/Project.band/Alternatives/000/Autosave/
+iCloud Drive (Archive)/Documents/Project.band/Media/
+iCloud Drive (Archive)/Documents/Project.band/Media/Audio Files/
+iCloud Drive (Archive)/Documents/Project.band/Resources/
+iCloud Drive (Archive)/Documents/Projects - Active/
+iCloud Drive (Archive)/Documents/Training 2019/
+iCloud Drive (Archive)/Documents/Training 2019/Programming for Data Science/
+iCloud Drive (Archive)/Documents/Training 2019/Programming for Data Science/Introduction to SQL/
+iCloud Drive (Archive)/Documents/workspace/
+iCloud Drive (Archive)/Documents/workspace/.metadata/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.mylyn/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.mylyn/.taskListIndex/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.core.resources/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.core.resources/.root/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.core.runtime/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.e4.workbench/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.jdt.core/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.jdt.ui/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.logback.configuration/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.mylyn.context.core/
+iCloud Drive (Archive)/Documents/workspace/.metadata/.plugins/org.eclipse.ui.workbench/
+iCloud Drive (Archive)/Downloads/
+iCloud Drive (Archive)/Drafts/
+iCloud Drive (Archive)/Drafts/Backups/
+iCloud Drive (Archive)/Drafts/Backups/Action Groups/
+iCloud Drive (Archive)/Drafts/Backups/Action Groups/2020-02-01-08-47-45/
+iCloud Drive (Archive)/Drafts/Backups/Action Groups/2020-03-06-10-15-30/
+iCloud Drive (Archive)/Drafts/Backups/Action Groups/2020-04-03-08-08-05/
+iCloud Drive (Archive)/Drafts/Backups/Action Groups/2020-04-04-08-51-48/
+iCloud Drive (Archive)/Drafts/Backups/Action Groups/2020-04-19-22-45-19/
+iCloud Drive (Archive)/Drafts/Backups/Action Groups/2021-01-03-22-25-48/
+iCloud Drive (Archive)/Drafts/Backups/Drafts/
+iCloud Drive (Archive)/Drafts/Library/
+iCloud Drive (Archive)/MindNode/
+iCloud Drive (Archive)/MindNode/Loader.mindnode/
+iCloud Drive (Archive)/MindNode/Loader.mindnode/QuickLook/
+iCloud Drive (Archive)/MindNode/Loader.mindnode/style.mindnodestyle/
+iCloud Drive (Archive)/MindNode/Trigger.mindnode/
+iCloud Drive (Archive)/MindNode/Trigger.mindnode/QuickLook/
+iCloud Drive (Archive)/MindNode/Trigger.mindnode/style.mindnodestyle/
+iCloud Drive (Archive)/Numbers/
+iCloud Drive (Archive)/Numbers/Blank.numbers-tef/
+iCloud Drive (Archive)/Numbers/Blank.numbers-tef/Previews/
+iCloud Drive (Archive)/Numbers/Checklist.numbers-tef/
+iCloud Drive (Archive)/Numbers/Checklist.numbers-tef/Previews/
+iCloud Drive (Archive)/Pythonista 3/
+iCloud Drive (Archive)/Scanner By Readdle/
+iCloud Drive (Archive)/Shortcuts/
+local/
+local/bin/
+local/log/
+
+sent 225208859 bytes  received 4376 bytes  166147.72 bytes/sec
+total size is 16736050051  speedup is 74.31
