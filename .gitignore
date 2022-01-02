@@ -1,5 +1,7 @@
 #
+**/*.err
 **/*.log
+**/*.out
 **/*.rpt
 
 src/__pycache__/

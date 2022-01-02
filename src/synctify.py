@@ -71,7 +71,7 @@ class Synctify(BaseApp):
                 self.output("is valid.\n")
             else:
                 self.output("does not exist! Terminating.")
-                this_app.destruct(self, 128)
+                this_app.destruct(128)
 
         self.info(f'end   verify_directories - returns {source=}. {destination=}')
         return source, destination
