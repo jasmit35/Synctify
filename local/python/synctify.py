@@ -21,6 +21,13 @@ from base_app import BaseApp
 
 
 #  =============================================================================
+class InvalidDirectoryException(Exception):
+    def __init__(self, message):
+        self.message = message
+        print(message)
+
+
+#  =============================================================================
 class Synctify(BaseApp):
 
     def __init__(self, app_name, version):
@@ -42,38 +49,42 @@ class Synctify(BaseApp):
     def process(self):
         self.info('begin process()')
 
-        source, destination = self.verify_directories()
+        rc = 0
+        try:
+            source, destination = self.get_valid_directories()
+            cmd = self.build_command_string(source, destination)
 
-        cmd = self.build_command_string(source, destination)
-
-        rc, my_stdout, my_stderr = run_shell_cmds(cmd)
-        sys.stdout.buffer.write(my_stdout)
-        sys.stderr.buffer.write(my_stderr)
+            rc, my_stdout, my_stderr = run_shell_cmds(cmd)
+            sys.stdout.buffer.write(my_stdout)
+            sys.stderr.buffer.write(my_stderr)
+        
+        except InvalidDirectoryException as e:
+            rc = 128
+            self.error(e.message)
+            self.output(e.message)
 
         # self.email_results(this_app, rc)
         message = self.build_message(rc)
-
         self.email_message(message)
 
         self.info(f"end   process - returns {rc=}")
         return rc
 
     #  -----------------------------------------------------------------------------
-    def verify_directories(self):
-        self.info('begin verify_directories()')
+    def get_valid_directories(self):
+        self.info('begin get_valid_directories()')
+
         source = self.cfgfile_params.get('source_dir', None)
         destination = self.cfgfile_params.get('destination_dir', None)
 
         for test_path_str in source, destination:
-            self.output(f"The directory'{test_path_str}' ")
             test_path = Path(test_path_str)
             if Path.exists(test_path):
-                self.output("is valid.\n")
+                self.output(f"The directory'{test_path_str}' is valid.\n")
             else:
-                self.output("does not exist! Terminating.")
-                this_app.destruct(128)
+                raise InvalidDirectoryException(f"Error! The directory '{test_path_str}' does not exist! Terminating.")
 
-        self.info(f'end   verify_directories - returns {source=}. {destination=}')
+        self.info(f'end   get_valid_directories - returns {source=}. {destination=}')
         return source, destination
 
     #  -----------------------------------------------------------------------------
