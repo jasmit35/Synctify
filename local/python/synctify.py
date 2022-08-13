@@ -57,7 +57,7 @@ class Synctify(BaseApp):
             rc, my_stdout, my_stderr = run_shell_cmds(cmd)
             sys.stdout.buffer.write(my_stdout)
             sys.stderr.buffer.write(my_stderr)
-        
+
         except InvalidDirectoryException as e:
             rc = 128
             self.error(e.message)
