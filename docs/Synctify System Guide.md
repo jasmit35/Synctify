@@ -9,38 +9,35 @@ If the new release is not tagged and ready, follow the steps in the section "New
 
 ```
 cd /tmp
-git clone https://github.com/jasmit35/Syntify.git --branch release/v1.0.0
+git clone https://github.com/jasmit35/Synctify.git --branch release/v1.0.0
 ```
 
-
-### Hide the existing version:
-
+### Archive the existing version:
 ```
-cd ~/test/Syntify
-mkdir .old_2022_06_23
-mv * .old_2022_06_23
+cd ~/test/
+tar -czvf .archive/Synctify_2022_06_26.tar.gz Synctify
 ```
 
-### Clean up any older versions:
-
+### Clean up any much older archives and the current version:
 ```
-cd ~/test/Syntify
+cd ~/test/.archive
 ll
-rm -rf .old_2021*
+rm Synctify_2021*
+cd ~/test
+rm -rf Synctify
 ```
 
 ### Use auto-update to install the new release:
-
 ```
 export ENVIRONMENT=test
-auto-update -e test -a Syntify
+auto-update -e test -a Synctify
 ```
 ### Update .db_secrets.env
 The secrets files are not stored on GitHub because the contain user names and passwords. You need to manually copy the files:
 
 ```
-cd /Users/jeff/test/Syntify/local/etc
-cp /Users/jeff/devl/Syntify/local/etc/.db_secrets.env .
+cd /Users/jeff/test/Synctify/local/etc
+cp /Users/jeff/devl/Synctify/local/etc/.db_secrets.env .
 ```
 
 ## Deploying a new release to Prod
@@ -48,14 +45,14 @@ cp /Users/jeff/devl/Syntify/local/etc/.db_secrets.env .
 
 ```
 cd /tmp
-git clone https://github.com/jasmit35/Syntify.git --branch release/v1.0.0
+git clone https://github.com/jasmit35/Synctify.git --branch release/v1.0.0
 ```
 
 ### Archive the existing version:
 
 ```
 cd ~/prod/
-tar -czvf Syntify_2022_06_26.tar.gz Syntify
+tar -czvf Synctify_2022_06_26.tar.gz Synctify
 ```
 
 ### Clean up any much older archives and the current version:
@@ -63,22 +60,22 @@ tar -czvf Syntify_2022_06_26.tar.gz Syntify
 ```
 cd ~/prod/
 ll
-rm Syntify_2021*
-rm -rf Syntify
+rm Synctify_2021*
+rm -rf Synctify
 ```
 
 ### Use auto-update to install the new release:
 
 ```
 export ENVIRONMENT=prod
-auto-update -e prod -a Syntify
+auto-update -e prod -a Synctify
 ```
 ### Update .db_secrets.env
 The secrets files are not stored on GitHub because the contain user names and passwords. You need to manually copy the files:
 
 ```
-cd /Users/jeff/prod/Syntify/local/etc
-cp /Users/jeff/devl/Syntify/local/etc/.db_secrets.env .
+cd /Users/jeff/prod/Synctify/local/etc
+cp /Users/jeff/devl/Synctify/local/etc/.db_secrets.env .
 ```
 
 
