@@ -45,22 +45,23 @@ cp /Users/jeff/devl/Synctify/local/etc/.db_secrets.env .
 
 ```
 cd /tmp
-git clone https://github.com/jasmit35/Synctify.git --branch release/v1.0.0
+git clone https://github.com/jasmit35/Synctify.git --branch release/vX.X.X
 ```
 
 ### Archive the existing version:
 
 ```
 cd ~/prod/
-tar -czvf Synctify_2022_06_26.tar.gz Synctify
+tar -czvf .archive/Synctify_2022_06_26.tar.gz Synctify
 ```
 
 ### Clean up any much older archives and the current version:
 
 ```
-cd ~/prod/
+cd ~/prod/.archive
 ll
 rm Synctify_2021*
+cd ~/prod/
 rm -rf Synctify
 ```
 
@@ -71,6 +72,8 @@ export ENVIRONMENT=prod
 auto-update -e prod -a Synctify
 ```
 ### Update .db_secrets.env
+**This step is only needed if the application accesses a database.**
+
 The secrets files are not stored on GitHub because the contain user names and passwords. You need to manually copy the files:
 
 ```
@@ -78,6 +81,7 @@ cd /Users/jeff/prod/Synctify/local/etc
 cp /Users/jeff/devl/Synctify/local/etc/.db_secrets.env .
 ```
 
+### Requirements.txt
+You need to install the required python packages on the target environment:
 
 
-# Requirements.txt
